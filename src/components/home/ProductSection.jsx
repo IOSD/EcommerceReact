@@ -7,14 +7,14 @@ class ProductSection extends Component {
         return (
             <div>
                 <h2 className="section-heading">{this.props.title}</h2>
-                    <Row gutter={24}>
+                    <Row gutter={24} className={'product-row'}>
                         <Col xs={24} sm={16} md={16} lg={8} xl={4}>
                             <div className="product-display-card">
                                 <Link to="/product">
-                                    <Card bordered={false} cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} >
-                                        <p className="title-text">Black Jacket</p>
-                                        <p className="seller-text">Urban Outfitters</p>
-                                        <p className="price-text"><strong>US $20</strong></p>  
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
                                     </Card>
                                 </Link>
                             </div>
@@ -22,10 +22,10 @@ class ProductSection extends Component {
                         <Col xs={24} sm={16} md={16} lg={8} xl={4}>
                             <div className="product-display-card">
                                 <Link to="/product">
-                                    <Card bordered={false} cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} >
-                                        <p className="title-text">Black Jacket</p>
-                                        <p className="seller-text">Urban Outfitters</p>
-                                        <p className="price-text"><strong>US $20</strong></p>  
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
                                     </Card>
                                 </Link>
                             </div>
@@ -33,10 +33,10 @@ class ProductSection extends Component {
                         <Col xs={24} sm={16} md={16} lg={8} xl={4}>
                             <div className="product-display-card">
                                 <Link to="/product">
-                                    <Card bordered={false} cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} >
-                                        <p className="title-text">Black Jacket</p>
-                                        <p className="seller-text">Urban Outfitters</p>
-                                        <p className="price-text"><strong>US $20</strong></p>  
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
                                     </Card>
                                 </Link>
                             </div>
@@ -44,10 +44,10 @@ class ProductSection extends Component {
                         <Col xs={24} sm={16} md={16} lg={8} xl={4}>
                             <div className="product-display-card">
                                 <Link to="/product">
-                                    <Card bordered={false} cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} >
-                                        <p className="title-text">Black Jacket</p>
-                                        <p className="seller-text">Urban Outfitters</p>
-                                        <p className="price-text"><strong>US $20</strong></p>  
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
                                     </Card>
                                 </Link>
                             </div>
@@ -55,10 +55,10 @@ class ProductSection extends Component {
                         <Col xs={24} sm={16} md={16} lg={8} xl={4}>
                             <div className="product-display-card">
                                 <Link to="/product">
-                                    <Card bordered={false} cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} >
-                                        <p className="title-text">Black Jacket</p>
-                                        <p className="seller-text">Urban Outfitters</p>
-                                        <p className="price-text"><strong>US $20</strong></p>  
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
                                     </Card>
                                 </Link>
                             </div>
@@ -66,14 +66,147 @@ class ProductSection extends Component {
                         <Col xs={24} sm={16} md={16} lg={8} xl={4}>
                             <div className="product-display-card">
                                 <Link to="/product">
-                                    <Card bordered={false} cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} >
-                                        <p className="title-text">Black Jacket</p>
-                                        <p className="seller-text">Urban Outfitters</p>
-                                        <p className="price-text"><strong>US $20</strong></p>  
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
                                     </Card>
                                 </Link>
                             </div>
                         </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+                        <Col xs={24} sm={16} md={16} lg={8} xl={4}>
+                            <div className="product-display-card">
+                                <Link to="/product">
+                                    <Card title={
+                                        <div className='container-fluid product-card-image'>
+                                        </div>
+                                    }>
+                                    </Card>
+                                </Link>
+                            </div>
+                        </Col>
+
                     </Row>
             </div>
         );

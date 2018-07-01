@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Redirect} from 'react-router-dom';
-import { Modal, Icon, Row, Col } from 'antd';
+import { Modal, Icon, Row, Col, Divider } from 'antd';
 import ProductCard from './ProductCard';
 import ProductSuggestions from './ProductSuggestions';
 
@@ -60,8 +60,9 @@ class Product extends Component {
                     </Col>
                 </Row>
 
-                <hr style={{ margin: '5% 0 5% 0'}}/>
-                
+                {/*<hr style={{ margin: '5% 0 5% 0'}}/>*/}
+                <Divider/>
+
                 <ProductSuggestions />
             
             </Modal>

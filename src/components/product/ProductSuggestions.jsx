@@ -1,34 +1,35 @@
-import React, { Component } from 'react';
-import { Card } from 'antd';
+import React, {Component} from 'react';
+import {Card} from 'antd';
+
 class ProductSuggestions extends Component {
     render() {
         return (
-            <div  className="container">
+            <div className="container">
                 <h3>More From This Seller</h3>
                 <div className="suggestions-panel">
                     <div className="mx-2 suggestions-card">
-                        <Card hoverable cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} ></Card>
+                        <Card border={false} title={
+                            <div className='product-card-image'>
+                            </div>
+                        }/>
                     </div>
                     <div className="mx-2 suggestions-card">
-                        <Card hoverable cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} ></Card>
+                        <Card border={false} title={
+                            <div className='product-card-image'>
+                            </div>
+                        }/>
                     </div>
                     <div className="mx-2 suggestions-card">
-                        <Card hoverable cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} ></Card>
+                        <Card border={false} title={
+                            <div className='product-card-image'>
+                            </div>
+                        }/>
                     </div>
                     <div className="mx-2 suggestions-card">
-                        <Card hoverable cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} ></Card>
-                    </div>
-                    <div className="mx-2 suggestions-card">
-                        <Card hoverable cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} ></Card>
-                    </div>
-                    <div className="mx-2 suggestions-card">
-                        <Card hoverable cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} ></Card>
-                    </div>
-                    <div className="mx-2 suggestions-card">
-                        <Card hoverable cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} ></Card>
-                    </div>
-                    <div className="mx-2 suggestions-card">
-                        <Card hoverable cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>} ></Card>
+                        <Card border={false} title={
+                            <div className='product-card-image'>
+                            </div>
+                        }/>
                     </div>
                 </div>
             </div>

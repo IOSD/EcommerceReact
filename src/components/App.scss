@@ -1,14 +1,89 @@
+// ====================================
+// BOOTSTRAP UTILITIES
+// ====================================
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+// Optional
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/code";
+@import "../../node_modules/bootstrap/scss/grid";
 @import '~antd/dist/antd.css';
+
+
+//
+$primary-color-navbar : '' ;
+
 
 // =====================================
 // PRODUCT MODAL
 // =====================================
+//
+//.product-card {
+//  height: 75%;
+//}
 
-.product-card {
-  height: 75%;
+//TODO: Fix Scrollbar by Third Party Library
+::-webkit-scrollbar {
+  width: 1em;
+  height: 1em
 }
 
-.product-modal-text p, .product-modal-text h2, .product-modal-text h3, .product-modal-text span {
+.ant-col-xl-4 {
+  width: 20% !important;
+}
+
+.product-row {
+  .ant-card {
+    border: none;
+    margin-bottom: 2 * $spacer;
+  }
+
+  .product-card-image {
+    width: 100%;
+    padding-top : 100%;
+    background-color: #eee;
+    background-image: url("https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .ant-card-head {
+    padding: 0;
+  }
+
+  .ant-card-head-title{
+    padding: 0;
+  }
+}
+
+.product-card {
+
+  .ant-card {
+    border: none;
+    margin-right: $spacer;
+  }
+
+  .product-card-image {
+    width: 100%;
+    padding-top: 100%;
+    background-color: #eee;
+    background-image: url("https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .ant-card-head {
+    padding: 0;
+  }
+
+}
+
+.product-modal-text p, .product-modal-text h2, .product-modal-text h3 {
   color: #222;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -17,18 +92,27 @@
   font-size: 3rem;
 }
 
+.product-modal-text span {
+  color: #222;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+  text-align: left;
+  font-size: 2rem;
+}
+
 #seller {
   font-weight: 300;
   color: #777;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #description-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #777;
   letter-spacing: 0;
   font-weight: 300;
@@ -36,7 +120,7 @@
 
 #rating {
   float: right;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .product-modal-text .buy {
@@ -45,33 +129,54 @@
   padding: 5px 30px;
 }
 
-
-
 .suggestions-card {
   display: inline-block;
   transition: transform 0.3s ease-in-out;
 }
 
 .suggestions-card:hover {
-  transform: scale(1.03);
+  //transform: scale(1.03);
+  border: 10px solid #e83e8c;
 }
 
-.suggestions-card .ant-card, .suggestions-card img{
-  width: 14vw;
-  height:14vw;
+.suggestions-card .ant-card, .suggestions-card img {
+  //width: 14vw;
+  //height: 14vw;
+}
+
+.suggestions-card {
+
+  .ant-card {
+    border: none;
+    margin-right: $spacer;
+  }
+
+  .product-card-image {
+    width: 250px;
+    height: 250px;
+    background-color: #eee;
+    background-image: url("https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .ant-card-head {
+    padding: 0;
+  }
 }
 
 .suggestions-card:first-child {
-  margin-left:0 !important;
+  margin-left: 0 !important;
 }
 
 .product-card .ant-card-body, .suggestions-card .ant-card-body {
-    padding: 0;
+  padding: 0;
 }
 
 .suggestions-panel {
   overflow-x: scroll;
-  overflow-y: hidden; 
+  overflow-y: hidden;
   white-space: nowrap;
 }
 
@@ -79,22 +184,9 @@
 // HOME PAGE
 // =================================================
 
-#components-layout-demo-custom-trigger .trigger {
-  font-size: 18px;
-  line-height: 64px;
-  padding: 0 24px;
-  cursor: pointer;
-  transition: color .3s;
-}
-
-#components-layout-demo-custom-trigger .trigger:hover {
-  color: #1890ff;
-}
-
-#components-layout-demo-custom-trigger .logo {
-  height: 32px;
-  background: rgba(255,255,255,.2);
-  margin: 16px;
+.logo {
+  margin: 0 24px 0 24px;
+  float: left;
 }
 
 .ant-carousel .slick-slide > div, .ant-carousel img, .img-container {
@@ -104,8 +196,8 @@
 
 .ant-carousel .slick-slide {
   text-align: center;
-  height: 160px;
-  line-height: 160px;
+  height: 60vh;
+  line-height: 30vh;
   overflow: hidden;
 }
 
@@ -128,26 +220,34 @@
   transition: transform .3s ease-in-out;
 }
 
+.product-display-card img {
+  margin-bottom: 10px;
+  //border-radius: 5px;
+}
 
 .product-display-card a:hover {
   text-decoration: none;
 }
 
-.product-display-card:hover {
-  transform: scale(1.03);
-  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
-	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+.product-row .ant-card {
+  margin-bottom: $spacer;
+}
+
+.product-display-card:hover img {
+  //transform: scale(1.03);
+  border:5px solid #e83e8c;
+  //box-sizing: padding-box;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .product-display-card p {
-    text-align: left;
-    margin-bottom: 0;
-    color: #222;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.6;
-    padding-left: 0.2em;
+  text-align: left;
+  margin-bottom: 0;
+  color: #222;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+  padding-left: 0.2em;
 }
 
 .title-text {
